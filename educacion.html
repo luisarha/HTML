@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,6 +7,16 @@
     <meta name="author" content="Luis Fernando Arana Haro">
     <meta name="description" content="Desarollo educacion html">
     <title>Educación</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+        th, td {
+        padding: 5px;
+        }
+
+    </style>
   </head>
 
   <body>
@@ -34,5 +43,47 @@
     <a href="#">educación</a><br>
     <a href="#">experiencia</a><br>
 
+    <h2>Educación</h2>
+
+    <table style="width:35%">
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>Cibertec</td>
+          <td>Lima</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td>Cibertec</td>
+          <td>Lima</td>
+          <td>No</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <form class="" action="index.html" method="post">
+
+        <h2><strong><legend>Agregar Estudios</legend></strong></h2>
+        <p><label for="anio">Año</label>
+           <select name="anio">
+             <option value="2014">2014</option>
+             <option value="2015">2015</option>
+             <option value="2016">2016</option>
+             <option value="2017">2017</option>
+             <option value="2018">2018</option>
+             <option value="2019">2019</option>
+           </select></p>
+
+        <p><label for="Institucion">Institución</label>
+          <input type="text" name="" value="" required>
+
+
+    </form>
   </body>
 </html>
