@@ -67,22 +67,43 @@
     </table>
     <br>
     <br>
-    <form class="" action="index.html" method="post">
+    <form>
 
         <h2><strong><legend>Agregar Estudios</legend></strong></h2>
-        <p><label for="anio">Año</label>
-           <select name="anio">
-             <option value="2014">2014</option>
-             <option value="2015">2015</option>
-             <option value="2016">2016</option>
-             <option value="2017">2017</option>
-             <option value="2018">2018</option>
-             <option value="2019">2019</option>
-           </select></p>
 
-        <p><label for="Institucion">Institución</label>
-          <input type="text" name="" value="" required>
+        <p>
+          <strong><label for="anio">Año</label></strong>
+            <select id="anio" name="estudioanio" >
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+            </select></p>
 
+        <p>
+          <strong><label for="institucion">Institución</label></strong>
+           <input type="text" id="institucion"name="nombre" value="" required>
+        </p>
+
+        <p>
+          <strong><label for="Lugar">Lugar</label></strong>
+          <textarea name="lugartexto" rows="8" cols="40"></textarea>
+        </p>
+
+        <p>
+          <strong><label for="">¿Culminó?</label></strong>
+            <input type="radio" id="siculmino"name="finestudio" value="si">
+            <label for="siculmino">Si</label>
+
+            <input type="radio" id="noculmino"name="finestudio" value="no">
+            <label for="noculmino">No</label>
+        </p>
+
+        <p>
+          <input type="submit" name="env" value="Enviar">
+        </p>
 
     </form>
   </body>
